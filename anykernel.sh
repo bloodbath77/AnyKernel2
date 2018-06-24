@@ -10,8 +10,6 @@ do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=whyred
-device.name2=whyred-user
-device.name3=Redmi Note 5 Pro
 '; } # end properties
 
 # shell variables
@@ -22,12 +20,6 @@ ramdisk_compression=auto;
 ## AnyKernel methods (DO NOT CHANGE)
 # import patching functions/variables - see for reference
 . /tmp/anykernel/tools/ak2-core.sh;
-
-## AnyKernel file attributes
-# set permissions/ownership for included ramdisk files
-chmod -R 750 $ramdisk/*;
-chown -R root:root $ramdisk/*;
-
 
 ## AnyKernel install
 dump_boot;
